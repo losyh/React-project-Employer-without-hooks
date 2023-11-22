@@ -15,6 +15,10 @@ class SearchPanel extends Component {
         this.setState({term})
         this.props.onUpdateSearch(term)
     }
+
+    onFilterSelect = (filter) => {
+        this.setState({filter})
+    }
     render() {
         return (
             <input type="text"
