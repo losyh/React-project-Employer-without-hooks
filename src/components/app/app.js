@@ -82,6 +82,10 @@ class App extends Component {
                 return items.filter(item => {
                     return item.salary >= 1000
                 })
+            case 'increase' :
+                return items.filter(item => {
+                    return item.increase === true
+                }) 
             default:
                 return items
         }

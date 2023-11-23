@@ -4,8 +4,10 @@ import './app-filter.css'
 const AppFilter = (props) => {
     const buttonsData = [
         {name: 'all', label: 'Все сотрудники'},
-        {name: 'rise', label: 'сотрудники на повышение'},
+        {name: 'rise', label: 'Cотрудники на повышение'},
+        {name: 'increase', label: 'Получат премию'},
         {name: 'over', label: 'З/П больше 1000$'}
+        
     ]
 
     const buttons = buttonsData.map(({name, label}) => {
